@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class Mover : MonoBehaviour
 {
-
     // Update is called once per frame
     void Update()
     {
@@ -24,6 +23,5 @@ public class Mover : MonoBehaviour
         {
             GetComponent<NavMeshAgent>().destination = hit.point;
         }
-
     }
 }
