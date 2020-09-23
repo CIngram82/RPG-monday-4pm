@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CombatTarget : MonoBehaviour
+namespace RPG.Combat
 {
-   
+    public class CombatTarget : MonoBehaviour
+    {
+
+    }
 }
