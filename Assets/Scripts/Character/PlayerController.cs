@@ -25,10 +25,11 @@ namespace RPG.Control
             {
                 CombatTarget target = hit.collider.gameObject.GetComponent<CombatTarget>();
                 if (target == null) continue;
+                if (!GetComponent<MeleeFighter>().CanAttack(target.gameObject)) { continue; }
 
                 if (Input.GetMouseButtonDown(0))
                 {
-                    GetComponent<MeleeFighter>().Attack(target);
+                    GetComponent<MeleeFighter>().Attack(target.gameObject);
                 }
                 return true;
             }
