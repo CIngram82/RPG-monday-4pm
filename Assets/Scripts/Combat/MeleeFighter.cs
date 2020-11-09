@@ -44,7 +44,7 @@ namespace RPG.Combat
             return Vector3.Distance(transform.position, target.position) < weaponRange;
         }
 
-        public void Attack(CombatTarget combatTarget)
+        public void Attack(GameObject combatTarget)
         {
             GetComponent<ActionScheduler>().StartAction(this);
             Debug.Log("attacking :" + combatTarget.name);
